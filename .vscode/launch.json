@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "practica_1_Ejercicio7",
+            "request": "launch",
+            "mainClass": "practica_1_Ejercicio7",
+            "projectName": "Prog 1_b18c61f9"
+        },
+        {
+            "type": "java",
+            "name": "Ejemplo_Valor_Entero_Valido",
+            "request": "launch",
+            "mainClass": "Ejemplo_Valor_Entero_Valido",
+            "projectName": "Prog 1_b18c61f9"
+        },
+        {
+            "type": "java",
+            "name": "Ejemplo_de_problema",
+            "request": "launch",
+            "mainClass": "Ejemplo_de_problema",
+            "projectName": "Prog 1_b18c61f9"
+        },
+        {
+            "type": "java",
+            "name": "Ejemplo_Capital_Acumulado",
+            "request": "launch",
+            "mainClass": "Ejemplo_Capital_Acumulado",
+            "projectName": "Prog 1_b18c61f9"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
