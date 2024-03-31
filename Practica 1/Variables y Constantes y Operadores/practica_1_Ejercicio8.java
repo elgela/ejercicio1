@@ -22,7 +22,7 @@ public class practica_1_Ejercicio8 {
         System.out.println("false OR true es: " + (false||true));
         System.out.println("false OR false es: " + (false||false));
     }
-    // @SuppressWarnings("unused")
+    @SuppressWarnings("unused")
     public static void operador_logico_and() {
         System.out.println("Tabla de verdad de la conjunción (and)");
         System.out.println('\0');
