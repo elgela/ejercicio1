@@ -13,7 +13,7 @@ public class practica_1_Ejercicio8 {
         System.out.println('\0');
         operador_logico_or();
     }
-    @SuppressWarnings("unused")
+    // @SuppressWarnings("unused")
     public static void operador_logico_or() {
         System.out.println("Tabla de verdad de la disyunción (or)");
         System.out.println('\0');
