@@ -14,6 +14,7 @@ public class practica_1_Ejercicio9 {
 
             System.out.println("Ingrese un número entero");
             numero = Integer.valueOf(entrada.readLine());
+
             division_x_2(numero);
             division_x_3(numero);
             division_x_4(numero);
@@ -39,9 +40,5 @@ public class practica_1_Ejercicio9 {
         float resultado;
         resultado = (numero/4);
         System.out.println("La división por 4 es: " + resultado);
-    }
-
-    public static void resultados_obtenidos(float numero) {
-        
     }
 }
