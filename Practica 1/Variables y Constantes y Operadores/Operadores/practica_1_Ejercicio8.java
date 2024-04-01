@@ -1,3 +1,4 @@
+package Operadores;
 /*Escribir un programa que imprima por pantalla la tabla de verdad
 para los operadores lógicos or y and (por separado) para dos
 valores booleanos. Utilizar los operadores para calcular el
