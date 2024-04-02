@@ -17,6 +17,3 @@ Escribir un programa con declaración de constantes y variables
 que pida al usuario el ingreso de los datos necesarios para
 imprimir el encabezado del ticket. */
 
-public class bonus_1_Ejercicio1 {
-    
-}
