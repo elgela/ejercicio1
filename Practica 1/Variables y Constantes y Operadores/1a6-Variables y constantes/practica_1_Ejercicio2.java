@@ -6,9 +6,9 @@ pantalla. */
 public class practica_1_Ejercicio2 {
     public static void main(String[] args) {
         double decimal;
-        final double parte=1.0;
+        final double parte = 1.0;
 
-        decimal=parte*2;
+        decimal = parte * 2;
 
         System.out.println(parte);
         System.out.println(decimal);
