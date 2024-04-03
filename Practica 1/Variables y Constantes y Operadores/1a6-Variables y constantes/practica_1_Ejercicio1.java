@@ -10,10 +10,10 @@ public class practica_1_Ejercicio1 {
         char letra;
         boolean existe;
 
-        numero=10;
-        decimal=5.8;
-        letra='c';
-        existe=true;
+        numero = 10;
+        decimal = 5.8;
+        letra = 'c';
+        existe = true;
 
         System.out.println(numero);
         System.out.println(decimal);
