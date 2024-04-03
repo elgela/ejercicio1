@@ -17,3 +17,24 @@ Escribir un programa con declaración de constantes y variables
 que pida al usuario el ingreso de los datos necesarios para
 imprimir el encabezado del ticket. */
 
+import java.io.*;
+import java.util.Random;
+public class bonus_1_Ejercicio1 {
+    public static void main(String[] args) {
+        final char fecha=02/04/24;
+        final int CUIT=99-34567833-9;
+        final byte nroCaja=8;
+        final double hora=18.55;
+        int ticketNro, dniCliente;
+        String cajeroNombre;
+        final String leyenda="El precio lo pone el cliente";//String para palabras
+    
+        try {
+            BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));//ingresa datos por teclado
+            
+            System.out.println(fecha);System.out.println(hora);
+        } catch (Exception exc) {
+            System.out.println(exc);
+        }
+    }
+}
