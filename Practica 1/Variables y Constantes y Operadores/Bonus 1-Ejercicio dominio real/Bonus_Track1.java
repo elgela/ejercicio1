@@ -21,7 +21,7 @@ import java.io.*;
 // import java.time.LocalDateTime;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-public class bonus_1_Ejercicio1 {
+public class Bonus_Track1 {
     public static void main(String[] args) {
         final String leyenda = "\"El precio lo pone el cliente\"";
         String fecha="04/04/23", hora="18:55", CUIT="99-34567833-9", nombreCajero, DNI="33.333.333";
