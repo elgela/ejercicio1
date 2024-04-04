@@ -18,42 +18,70 @@ que pida al usuario el ingreso de los datos necesarios para
 imprimir el encabezado del ticket. */
 
 import java.io.*;
-import java.time.LocalDateTime;
+// import java.time.LocalDateTime;
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 public class bonus_1_Ejercicio1 {
     public static void main(String[] args) {
-        LocalDateTime localDate = LocalDateTime.now();
-        int dia = localDate.getDayOfMonth();
-        int mes = localDate.getMonthValue();
-        int año = localDate.getYear();
-        int hours = localDate.getHour();
-        int minutes = localDate.getMinute();
-        int nroTicket;
-        String CUIT;
-        final String DNI="11.222.333"; //al tener puntos el número debe ser un String
-        final String leyenda = "\"El precio lo pone el cliente\"";// String para palabras // ("\...\" para poner comillas dentro del texto)
-        final String cajero = "Marcelo";
-        final int caja=5;
-        
-        
+        final String leyenda = "\"El precio lo pone el cliente\"";
+        String fecha="04/04/23", hora="18:55", CUIT="99-34567833-9", nombreCajero, DNI="33.333.333";
+        int nroTicket=3455674, nroCaja;
+
         try {
-            BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));// ingresa datos por teclado
-            System.out.println("Nro de ticket: ");
-            nroTicket = Integer.valueOf(entrada.readLine());
-            System.out.println("Ingrese Nro de CUIT:");
-            CUIT = String.valueOf(entrada.readLine());
-            
+            BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
+
+            System.out.println("Cajero: ");
+            nombreCajero = String.valueOf(entrada.readLine());
+            System.out.println("Nro Caja");
+            nroCaja = Integer.valueOf(entrada.readLine());
+
             System.out.println('\b');
-            System.out.println(dia + "/" + mes + "/" + año + " - " + hours + ":" + minutes+"  Ticket Nro. "+nroTicket);
+            System.out.println(fecha + " - " + hora + "  Ticket Nro. " + nroTicket);
             System.out.println('\b');
             System.out.println("CUIT: " + CUIT);
             System.out.println('\b');
-            System.out.println("Cajero: " + cajero + " Caja: " + caja);
-            System.out.println("DNI: " + DNI + "  " + leyenda);
-
-
+            System.out.println("Cajero: " + nombreCajero + " Caja: " + nroCaja);
+            System.out.println("DNI: " + DNI + " " + leyenda);
         } catch (Exception exc) {
             System.out.println(exc);
         }
     }
 }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // public class bonus_1_Ejercicio1 {
+    //     public static void main(String[] args) {
+    //         LocalDateTime localDate = LocalDateTime.now();
+    //         int dia = localDate.getDayOfMonth();
+    //         int mes = localDate.getMonthValue();
+    //         int año = localDate.getYear();
+    //         int hours = localDate.getHour();
+    //         int minutes = localDate.getMinute();
+    //         int nroTicket;
+    //         String CUIT;
+    //         final String DNI="11.222.333"; //al tener puntos el número debe ser un String
+    //         final String leyenda = "\"El precio lo pone el cliente\"";// String para palabras // ("\...\" para poner comillas dentro del texto)
+    //         final String cajero = "Marcelo";
+    //         final int caja=5;
+            
+            
+    //         try {
+    //             BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));// ingresa datos por teclado
+    //             System.out.println("Nro de ticket: ");
+    //             nroTicket = Integer.valueOf(entrada.readLine());
+    //             System.out.println("Ingrese Nro de CUIT:");
+    //             CUIT = String.valueOf(entrada.readLine());
+                
+    //             System.out.println('\b');
+    //             System.out.println(dia + "/" + mes + "/" + año + " - " + hours + ":" + minutes+"  Ticket Nro. "+nroTicket);
+    //             System.out.println('\b');
+    //             System.out.println("CUIT: " + CUIT);
+    //             System.out.println('\b');
+    //             System.out.println("Cajero: " + cajero + " Caja: " + caja);
+    //             System.out.println("DNI: " + DNI + "  " + leyenda);
+    
+    
+    //         } catch (Exception exc) {
+    //             System.out.println(exc);
+    //         }
+    //     }
+    // }
