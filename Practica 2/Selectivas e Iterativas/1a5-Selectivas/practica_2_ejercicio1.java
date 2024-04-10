@@ -12,13 +12,15 @@ decreciente o “error” si no cumplen ningún orden */
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+
 public class practica_2_ejercicio1 {
     public static void main(String[] args) {
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 
+        int numero1, numero2, numero3;
         int numero;
         char letra;
-        
+
         try {
             System.out.println("Ingrese número");
             numero = Integer.valueOf(entrada.readLine());
@@ -31,25 +33,21 @@ public class practica_2_ejercicio1 {
             letra = entrada.readLine().charAt(0);
             vocal_consonante(letra);
             System.out.println('\0');
-            System.out.println("Ingrese número 1:");
-            numero = Integer.valueOf(entrada.readLine());
-            System.out.println("Ingrese número 2:");
-            numero = Integer.valueOf(entrada.readLine());
-            System.out.println("Ingrese número 3:");
-            numero = Integer.valueOf(entrada.readLine());
+            System.out.println("Ingrese 3 números:");
+            numero1 = Integer.valueOf(entrada.readLine());
+            numero2 = Integer.valueOf(entrada.readLine());
+            numero3 = Integer.valueOf(entrada.readLine());
             System.out.println('\0');
-
-        }
-        catch(Exception exc) {
+            creciente_decreciente(numero1, numero2, numero3);
+        } catch (Exception exc) {
             System.out.println(exc);
         }
     }
 
     public static void positivo_negativo(int numero) {
-        if(numero > 0) {
+        if (numero > 0) {
             System.out.println("Número positivo");
-        }
-        else {
+        } else {
             System.out.println("Número negativo");
         }
 
@@ -58,8 +56,7 @@ public class practica_2_ejercicio1 {
     public static void grande_chico(int numero) {
         if (numero > 100) {
             System.out.println("Grande");
-        }
-        else {
+        } else {
             System.out.println("Chico");
         }
     }
@@ -74,10 +71,10 @@ public class practica_2_ejercicio1 {
                     System.out.println("Martes");
                     break;
                 case 3:
-                System.out.println("Miércoles");
+                    System.out.println("Miércoles");
                     break;
                 case 4:
-                System.out.println("Jueves");
+                    System.out.println("Jueves");
                     break;
                 case 5:
                     System.out.println("Viernes");
@@ -105,9 +102,13 @@ public class practica_2_ejercicio1 {
         }
     }
 
-    public static void creciente_decreciente(int numero1, int numero2, int numero3) {
-        if ((numero1>numero2)&&(numero1>numero3)) {
-            
+    public static void creciente_decreciente(int num1, int num2, int num3) {   
+        if ((num1 < num2) && (num2 < num3)) {
+            System.out.println("creciente");
+        } else if ((num1 > num2) && (num2 > num3)) {
+            System.out.println("decreciente");
+        } else {
+            System.out.println("error");
         }
     }
 }
