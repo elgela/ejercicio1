@@ -33,7 +33,7 @@ public class practica_2_ejercicio1 {
             letra = entrada.readLine().charAt(0);
             vocal_consonante(letra);
             System.out.println('\0');
-            System.out.println("Ingrese 3 números:");
+            System.out.println("Ingrese 3 números consecutivos:");
             numero1 = Integer.valueOf(entrada.readLine());
             numero2 = Integer.valueOf(entrada.readLine());
             numero3 = Integer.valueOf(entrada.readLine());
