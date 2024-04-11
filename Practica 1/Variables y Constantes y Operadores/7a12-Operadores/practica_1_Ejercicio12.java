@@ -21,25 +21,29 @@ public class practica_1_Ejercicio12 {
             System.out.println("Valor original primer número:");
             System.err.println(numero1);
             System.out.println("Incrementado:");
-            numero_incremento(numero1);
+            numero1++;
+            System.out.println(numero1);
+            // numero_incremento(numero1);
             System.out.println('\0');
             System.out.println("Valor original segundo número:");
             System.out.println(numero2);
             System.out.println("Decrementado:");
-            numero_decremento(numero2);
+            numero2--;
+            System.out.println(numero2);
+            // numero_decremento(numero2);
 
         } catch (Exception exc) {
             System.out.println(exc);
         }
     }
-
-    public static void numero_incremento(int numero1) {
-        numero1++;
-        System.out.println(numero1);
-    }
-
-    public static void numero_decremento(int numero2) {
-        numero2--;
-        System.out.println(numero2);
-    }
 }
+    // public static void numero_incremento(int numero1) {
+    //     numero1++;
+    //     System.out.println(numero1);
+    // }
+
+    // public static void numero_decremento(int numero2) {
+    //     numero2--;
+    //     System.out.println(numero2);
+    // }
+// }
