@@ -10,25 +10,16 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 public class practica_2_ejercicio2 {
     public static void main(String[] args) {
+
+        int mes, dias;
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
-
-        int numero;
-        final int mes = 12;
-        int dias;
-
-        try {
-            System.out.println("Ingrese número de mes:");
-            numero = Integer.valueOf(entrada.readLine());
-            switch (mes) {
-                case 1:
-                    System.out.println("Enero");
-                    break;
             
-                default:
-                    break;
-            }
-        } catch (Exception exc) {
-            System.out.println(exc);
+        try {
+            System.out.println("Ingrese el número de mes");
+            mes = Integer.valueOf(entrada.readLine());
+            
+        } catch (Exception e) {
+            System.out.println("Error");
         }
     }
 }
