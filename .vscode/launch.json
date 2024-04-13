@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "practica_2_ejercicio4",
+            "request": "launch",
+            "mainClass": "practica_2_ejercicio4",
+            "projectName": "Prog 1_e2f870b5"
+        },
+        {
+            "type": "java",
             "name": "practica_2_ejercicio3",
             "request": "launch",
             "mainClass": "practica_2_ejercicio3",
