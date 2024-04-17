@@ -34,9 +34,9 @@ public class practica_2_ejercicio5 {
         int hora;
         Double temperatura;
         char caracter;
-        final int clave = 5;
+        final int clave = 666;
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
-
+        
         try {
             System.out.println("Ingrese la hora");
             hora = Integer.valueOf(entrada.readLine());
@@ -87,7 +87,9 @@ public class practica_2_ejercicio5 {
                 if (numero == clave) {
                     System.out.println("Ingrese una nueva clave entre 100 y 999");
                     numero = Integer.valueOf(entrada.readLine());
-
+                    if (numero/100 == clave/100) {
+                        System.out.println("Clave correcta");
+                    }
                     
                 }
             }
