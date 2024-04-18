@@ -17,10 +17,12 @@ public class practica_2_ejercicio6 {
         try {
             System.out.println("Ingrese número entero");
             numero = Integer.valueOf(entrada.readLine());
-            while ((numero <= MAX) && (numero >= MIN)) {
+
+            while ((numero < MAX) && (numero > MIN)) {
                 if ((numero %2 == 0) && (numero %3 == 0)) {
-                    System.out.println(numero + " es múltiplo de 2 y de 3");
+                    
                 }
+                System.out.println("multiplo");
             }
         } catch (Exception e) {
             System.out.println("Error");
