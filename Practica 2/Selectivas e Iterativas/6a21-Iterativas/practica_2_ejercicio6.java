@@ -9,23 +9,22 @@ import java.io.InputStreamReader;
 
 public class practica_2_ejercicio6 {
     public static void main(String[] args) {
-        int numero;
+        int numero = 1;
         final int MAX = 100;
         final int MIN = 1;
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
-
-        try {
-            System.out.println("Ingrese número entero");
-            numero = Integer.valueOf(entrada.readLine());
-
-            while ((numero < MAX) && (numero > MIN)) {
+        
+        while ((numero <= MAX) && (numero >= MIN)) {
+            try {
+                System.out.println("Ingrese número menor que 100 y mayor que 1");
+                numero = Integer.valueOf(entrada.readLine());
                 if ((numero %2 == 0) && (numero %3 == 0)) {
-                    
+                    System.out.println(numero + " es múltiplo de 2 y de 3");
+                    System.out.println('\0');
                 }
-                System.out.println("multiplo");
+            } catch (Exception e) {
+                System.out.println("Error");
             }
-        } catch (Exception e) {
-            System.out.println("Error");
         }
     }
 }
