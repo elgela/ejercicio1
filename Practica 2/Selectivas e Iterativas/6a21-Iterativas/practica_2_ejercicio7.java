@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 public class practica_2_ejercicio7 {
     public static void main(String[] args) {
         char caracter = 'a';
-        // int numero = 1;
 
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
         while (caracter != '*') {
