@@ -12,9 +12,9 @@ public class practica_2_ejercicio11 {
 
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 
-        while (letra != '0') {
+        while ((letra >='a') && (letra <= 'z') && (letra != 0)) {
             try {
-                System.out.println("Ingrese letra minúscula / 0 para terminar y contar la cantidad");
+                System.out.println("Ingrese letra minúscula / Número o mayúscula para terminar y contar la cantidad");
                 letra = entrada.readLine().charAt(0);
                 switch (letra) {
                     case 'a':
