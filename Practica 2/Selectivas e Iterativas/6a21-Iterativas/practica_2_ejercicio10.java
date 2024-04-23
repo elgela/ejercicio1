@@ -10,12 +10,10 @@ public class practica_2_ejercicio10 {
     public static void main(String[] args) {
         int numero, suma = 0;
         boolean esValido = true;
-
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
-
-            while (esValido) {
+        while (esValido) {
                 try {
-                    System.out.println("Ingrese número entre 1 y 10 / 0 sumar y terminar");
+                    System.out.println("Ingrese número entre 1 y 10 / 0 para terminar y sumar");
                     numero = Integer.valueOf(entrada.readLine());
 
                     if ((numero < 1) || (numero > 10)) {
