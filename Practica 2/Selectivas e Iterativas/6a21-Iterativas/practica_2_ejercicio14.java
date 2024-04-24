@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 
 public class practica_2_ejercicio14 {
     public static void main(String[] args) {
-        int numero = 1, cantPar = 0, contador = 0;
+        int numero = 1, cantPar = 0;
 
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 
@@ -19,7 +19,7 @@ public class practica_2_ejercicio14 {
                     if (numero %2 == 0) {
                         cantPar++;
                     }
-                    contador++;
+                    // cantidad++;
 
             } catch (Exception e) {
                 System.out.println("Error");
