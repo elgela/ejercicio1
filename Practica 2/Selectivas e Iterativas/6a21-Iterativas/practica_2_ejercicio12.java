@@ -7,27 +7,27 @@ import java.io.InputStreamReader;
 
 public class practica_2_ejercicio12 {
     public static void main(String[] args) {
-        char letra = '*';
+        char letra = 'f';
         char mayor = 'a';
         char menor = 'z';
 
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 
-        while ((letra >='a') && (letra <= 'z')) {
-            try {
+        try {
+            while (letra != '*') {
                 System.out.println("Ingrese letra minúscula");
                 letra = entrada.readLine().charAt(0);
 
-                if (letra < mayor) {
+                if (letra > mayor) {
                     mayor = letra;
-                } else if (letra > menor){
+                } else if (letra < menor) {
                     menor = letra;
-                }              
+                }
 
                 
-            } catch (Exception exc) {
-                System.out.println("Error");
-            }
+            }    
+        } catch (Exception exc) {
+            System.out.println("Error");
         }
         System.out.println("Letra mayor: " + mayor);
         System.out.println("Letra menor: " + menor);
