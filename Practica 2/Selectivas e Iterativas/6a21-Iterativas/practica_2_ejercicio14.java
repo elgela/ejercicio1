@@ -7,23 +7,24 @@ import java.io.InputStreamReader;
 
 public class practica_2_ejercicio14 {
     public static void main(String[] args) {
-        int numero = 1, numPar = 2;
+        int numero = 1, cantPar = 0, contador = 0;
 
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 
-        while (((numero != 0) && (numero >= 1))) {
+        while (numero < 10) {
             try {
-                System.out.println("Ingrese 10 números positivos");
+                System.out.println("Ingrese 10 números enteros positivos");
                 numero = Integer.valueOf(entrada.readLine());
-                for (numero = 1; numero <= 10; numero++) {
+
                     if (numero %2 == 0) {
-                        numPar = numero;
+                        cantPar++;
                     }
-                }
+                    contador++;
+
             } catch (Exception e) {
                 System.out.println("Error");
             }
         }
-        System.out.println("Cantidad de pares: " + numPar);
+        System.out.println("Se ingresaron " + cantPar + " pares");
     }
 }
