@@ -11,7 +11,7 @@ public class practica_2_ejercicio14 {
 
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 
-        while (numero < 10) {
+        while (numero > 0) {
             try {
                 System.out.println("Ingrese 10 números enteros positivos");
                 numero = Integer.valueOf(entrada.readLine());
