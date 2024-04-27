@@ -12,7 +12,7 @@ public class practica_2_ejercicio16 {
 
         while (caracter != '0') {
             try {
-                System.out.println("Ingrese 15 caracteres");
+                System.out.println("Ingrese 15 caracteres / 0 para terminar");
                 System.out.println("Caracter " + cantidad++);
                 caracter = entrada.readLine().charAt(0);
                 for (cantCaracter = 1; cantCaracter <= 15; cantCaracter++) {
