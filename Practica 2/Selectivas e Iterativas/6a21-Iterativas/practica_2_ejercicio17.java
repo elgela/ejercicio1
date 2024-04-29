@@ -8,21 +8,18 @@ import java.io.InputStreamReader;
 
 public class practica_2_ejercicio17 {
     public static void main(String[] args) {
-        int valor = 0, regresiva = 0;
-        final int MAX = 10;
-        final int MIN = 1;
+        int valor = 1;
 
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 
         try {
-            System.out.println("Ingrese un valor");
+            System.out.println("Ingrese valor");
             valor = Integer.valueOf(entrada.readLine());
+            System.out.println('\0');
 
-            if ((valor < MAX) && (valor > MIN)) {
-                valor = regresiva;
-                regresiva--;
+            for (int i = valor; i >= 0; i--) {
+                System.out.println(i);
             }
-            System.err.println(regresiva);
         } catch (Exception exc) {
             System.out.println("Error");
         }
