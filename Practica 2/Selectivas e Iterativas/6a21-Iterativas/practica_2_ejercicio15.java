@@ -20,35 +20,31 @@ public class practica_2_ejercicio15 {
             promedio = (suma / cantidad);
 
         }
-        while (numero > 0) {
+        while (numero != 0) {
             try {
                 System.out.println("Ingrese un número");
                 numero = Integer.valueOf(entrada.readLine());
-                
+
                 if (numero == 0) {
-                    promedioNumeros(promedio);
+                    if (numero > numeroMayor) {
+                        numeroMayor = numero;
+                        suma = numero;
+                        cantidad++;
+                    }
+                    if (numero < numeroMenor) {
+                        numeroMenor = numero;
+                        numero = suma;
+                        cantidad++;
+                    }
+
                 }
-                
                 System.out.println("Ingrese un número");
                 numero = Integer.valueOf(entrada.readLine());
+                promedio = (suma / cantidad);
             } catch (Exception exc) {
                 System.out.println("Error");
             }
         }
     }
 
-    public static void promedioNumeros(int numero, int suma, int cantidad, int numeroMayor, int numeroMenor) {
-        double promedio = 0;
-        if (numero > numeroMayor) {
-            numeroMayor = numero;
-            suma = numero;
-            cantidad++;
-        }
-        if (numero < numeroMenor) {
-            numeroMenor = numero;
-            numero = suma;
-            cantidad++;
-        }
-        promedio = (suma / cantidad);
-    }
 }
