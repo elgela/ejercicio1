@@ -17,8 +17,10 @@ public class practica_2_ejercicio17 {
             valor = Integer.valueOf(entrada.readLine());
             System.out.println('\0');
 
-            for (int i = valor; i >= 0; i--) {
-                System.out.println(i);
+            if ((valor < 10) && (valor > 1)) {
+                for (int i = valor; i >= 0; i--) {
+                    System.out.println(i);
+                }
             }
         } catch (Exception exc) {
             System.out.println("Error");
