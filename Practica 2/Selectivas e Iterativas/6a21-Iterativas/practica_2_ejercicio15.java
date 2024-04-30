@@ -5,46 +5,36 @@ cuál fue el menor número. */
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
 public class practica_2_ejercicio15 {
     public static void main(String[] args) {
-        int numero = 0, suma = 0, cantidad = 0, numeroMayor = 0, numeroMenor = 0;
-        double promedio = 0;
+        int numero = 1, numMayor = 1, numMenor = 1;
+        
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
-
-        if (numero != 0) {
-            numero = suma = cantidad;
-            numero += numeroMenor;
-            numero += numeroMayor;
-            suma += numero;
-            promedio = (suma / cantidad);
-
-        }
+        
         while (numero != 0) {
             try {
-                System.out.println("Ingrese un número");
+                System.out.println("Ingrese números enteros");
                 numero = Integer.valueOf(entrada.readLine());
 
                 if (numero == 0) {
-                    if (numero > numeroMayor) {
-                        numeroMayor = numero;
-                        suma = numero;
-                        cantidad++;
-                    }
-                    if (numero < numeroMenor) {
-                        numeroMenor = numero;
-                        numero = suma;
-                        cantidad++;
-                    }
-
+                    promedio();
                 }
-                System.out.println("Ingrese un número");
-                numero = Integer.valueOf(entrada.readLine());
-                promedio = (suma / cantidad);
             } catch (Exception exc) {
                 System.out.println("Error");
             }
         }
     }
+    public static double promedio() {
+        int numero = 1, cantidad = 0, suma = 0;
+        double promedio = 0.0;
 
+        for (cantidad = 0; cantidad <= numero ; cantidad++) {
+            if (numero > 0) {
+                cantidad++;
+                suma = (numero + numero);
+                promedio = suma / cantidad;
+            }
+        }
+        return promedio;
+    }
 }
