@@ -1,7 +1,8 @@
 /*Escribir un programa que solicite nombre, edad, altura y ocupación, y
 los imprima por pantalla. */
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class practica_1_Ejercicio5 {
     public static void main(String[] args) {
         int edad;
