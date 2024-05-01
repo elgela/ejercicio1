@@ -17,7 +17,7 @@ public class practica_3_ejercicio5 {
         final int MAX = 4;
         int numero;
         for (numero = 1; numero <= MAX; numero++) {
-            System.out.println("Número " + numero);
+            System.out.println("Número: " + numero);
         }
         return numero;
     }
