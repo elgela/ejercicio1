@@ -27,9 +27,9 @@ public class practica_3_ejercicio7 {
     }
 
     public static int suma() {
-        int suma = 0;
+        int suma = 0, num = 0;
         final int MAX = 200;
-        for (int num = 0; num <= MAX; num++) {
+        for (num = 0; num <= MAX; num++) {
             suma = suma + num;
         }
         System.out.println("La sumatoria de los primeros 200 números naturales es: " + suma);
