@@ -10,7 +10,8 @@ Lápiz 15.5
 Papel 20.6
 Importe total 36.1 */
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class practica_1_Ejercicio6 {
     public static void main(String[] args) {
         char tipo_factura='C';
