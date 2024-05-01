@@ -4,8 +4,8 @@ obtenido le reste el tercero. Muestre por pantalla el resultado
 obtenido. Puede o no usar variables auxiliares para los cálculos.
 Tenga en cuenta posibles errores en las operaciones. */
 
-import java.io.*;
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class practica_1_Ejercicio7 {
     public static void main(String[] args) {
         double numero1, numero2, numero3;
