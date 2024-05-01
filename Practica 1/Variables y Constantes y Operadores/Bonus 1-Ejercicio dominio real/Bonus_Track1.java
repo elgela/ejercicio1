@@ -17,7 +17,8 @@ Escribir un programa con declaración de constantes y variables
 que pida al usuario el ingreso de los datos necesarios para
 imprimir el encabezado del ticket. */
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 // import java.time.LocalDateTime;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
