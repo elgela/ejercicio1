@@ -12,52 +12,58 @@ d. “otro” para los restantes casos de caracteres. */
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 public class practica_3_ejercicio9 {
+    final static char minMayusculas = 'A', maxMayusculas = 'Z', minMinusculas = 'a', maxMinusculas = 'z', digitoMin = '0', digitoMax = '9';
+    final static int MAX = 10;
+    final static int MIN = 1;
     public static void main(String[] args) {
+        int numero = obtenerNumero();
+        char caracter;
+        while (numero >= MIN && numero <= MAX) {
+            caracter = obtenerCaracter();
+            procesar(caracter);
+            numero = obtenerNumero();
+        }
+
+    }
+
+    public static int obtenerNumero() {
         int numero = 1;
-        // final int MIN = 1;
-        // final int MAX = 10;
-        char caracter = 'a';
 
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 
-        while (numero != '0') {
-            try {
-                System.out.println("Ingrese un número entero entre 1 y 10");
-                numero = Integer.valueOf(entrada.readLine());
-
-                if ((numero >= 1) && (numero <= 10)) {
-                    System.out.println("Ingrese un carácter");
-                    caracter = entrada.readLine().charAt(0);
-                    letraMinuscula(caracter);
-                    letraMayuscula(caracter);
-                    digito(numero);
-                } else {
-                    System.out.println("Otro");
-                }
-            } catch (Exception exc) {
-                System.out.println("Error");
-            }
+        try {
+            System.out.println("Ingrese número entero");
+            numero = Integer.valueOf(entrada.readLine());
+            
+        } catch (Exception exc) {
+            System.out.println("Error");
         }
-    }
 
-    public static char letraMinuscula(char caracter) {
-        if ((caracter >= 'a') && (caracter <= 'z')) {
-            System.out.println("Letra minúscula");
-        }
-        return caracter;
-    }
-
-    public static char letraMayuscula(char caracter) {
-        if ((caracter >= 'A') && (caracter <= 'Z')) {
-            System.out.println("Letra mayúscula");
-        }
-        return caracter;
-    }
-
-    public static int digito(int numero) {
-        if (numero >= 1) {
-            System.out.println("Dígito");
-        }
         return numero;
+    }
+
+    public static void procesar(char caracter) {
+        if (caracter >= minMinusculas && caracter <= maxMinusculas) {
+            System.out.println("Letra minúscula");
+        } else if (caracter >= minMayusculas && caracter <= maxMayusculas) {
+            System.out.println("Letra mayúscula");
+        } else if (caracter >= digitoMin && caracter <= digitoMax) {
+            System.out.println("Dígito");
+        } else {
+            System.out.println("Otro");
+        }
+    }
+
+    public static char obtenerCaracter() {
+        char caracter = ' ';
+        BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
+        try {
+            System.out.println("Ingrese carácter");
+            caracter = entrada.readLine().charAt(0);
+            
+        } catch (Exception e) {
+            System.out.println("Error");
+        }
+        return caracter;
     }
 }
