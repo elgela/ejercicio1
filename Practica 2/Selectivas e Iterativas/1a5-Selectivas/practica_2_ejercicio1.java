@@ -12,7 +12,6 @@ decreciente o “error” si no cumplen ningún orden */
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
 public class practica_2_ejercicio1 {
     public static void main(String[] args) {
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
@@ -22,7 +21,7 @@ public class practica_2_ejercicio1 {
         char letra;
 
         try {
-            System.out.println("Ingrese número");
+            System.out.println("Ingrese un número");
             numero = Integer.valueOf(entrada.readLine());
             System.out.println('\0');
             positivo_negativo(numero);
@@ -102,7 +101,7 @@ public class practica_2_ejercicio1 {
         }
     }
 
-    public static void creciente_decreciente(int num1, int num2, int num3) {   
+    public static void creciente_decreciente(int num1, int num2, int num3) {
         if ((num1 < num2) && (num2 < num3)) {
             System.out.println("creciente");
         } else if ((num1 > num2) && (num2 > num3)) {
