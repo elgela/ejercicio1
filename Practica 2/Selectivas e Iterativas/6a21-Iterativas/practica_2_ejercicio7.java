@@ -6,7 +6,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 public class practica_2_ejercicio7 {
     public static void main(String[] args) {
-        char caracter = 'a';
+        char caracter = 'b';
 
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
         while (caracter != '*') {
