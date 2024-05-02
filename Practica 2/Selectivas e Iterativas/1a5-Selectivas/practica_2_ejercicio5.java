@@ -28,7 +28,6 @@ segunda clave ingresada 698. */
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
 public class practica_2_ejercicio5 {
     public static void main(String[] args) {
         int hora;
