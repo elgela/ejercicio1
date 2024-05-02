@@ -8,7 +8,6 @@ imprimir la cantidad de días correspondiente. */
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
 public class practica_2_ejercicio2 {
     public static void main(String[] args) {
 
