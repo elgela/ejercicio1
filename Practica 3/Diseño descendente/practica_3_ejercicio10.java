@@ -30,9 +30,14 @@ public class practica_3_ejercicio10 {
                     if (numero %3 == 0) {
                         System.out.println("Ingrese un carácter");
                         caracter = entrada.readLine().charAt(0);
+                        if (caracter >= 'a' && caracter <= 'z') {
+                            System.out.println("Es letra minúscula");
+                        } else {
+                            System.out.println("Es un símbolo");
+                        }
                     }
                 }
-            } catch (Exception e) {
+            } catch (Exception exc) {
                 System.out.println("Error");
             }
         }
