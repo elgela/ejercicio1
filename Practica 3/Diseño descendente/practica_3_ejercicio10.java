@@ -32,6 +32,8 @@ public class practica_3_ejercicio10 {
                         caracter = entrada.readLine().charAt(0);
                         if (caracter >= 'a' && caracter <= 'z') {
                             System.out.println("Es letra minúscula");
+                        } else if (caracter >= 'A' && caracter <= 'Z') {
+                            System.out.println("Es letra mayúscula");
                         } else {
                             System.out.println("Es un símbolo");
                         }
