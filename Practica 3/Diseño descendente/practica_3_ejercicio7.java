@@ -15,14 +15,16 @@ public class practica_3_ejercicio7 {
         int numero = 1;
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 
-        try {
-            System.out.println("Ingrese número");
-            numero = Integer.valueOf(entrada.readLine());
-            if (numero != 0) {
-                suma();
+        while (numero != 0) {
+            try {
+                System.out.println("Ingrese número");
+                numero = Integer.valueOf(entrada.readLine());
+                if (numero != 0) {
+                    suma();
+                }
+            } catch (Exception exc) {
+                System.out.println("Error");
             }
-        } catch (Exception exc) {
-            System.out.println("Error");
         }
     }
 
