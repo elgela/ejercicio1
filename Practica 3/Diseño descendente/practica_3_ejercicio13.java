@@ -16,7 +16,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 // import java.util.Scanner;
 public class practica_3_ejercicio13 {
-    public static double r1 = 0.0, r2 = 0.0, r3 = 0.0;
+    public static float r1 = 0, r2 = 0, r3 = 0;
     public static void main(String[] args) {
         int opcion = 0;
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
@@ -58,14 +58,12 @@ public class practica_3_ejercicio13 {
         }
 
     // public static double raizCuadrada() {
-    //     Scanner input = new Scanner(System.in);
-    //     float r
 
-    //     return resultado;
     // }
 
-    public static double promedio() {
-        double prom = (r1 + r2 + r3) / 3.0;
+    public static float promedio() {
+        float suma = (r1 + r2 + r3);
+        float prom = suma / 3;
         System.out.println("El promedio es: " + prom);
         return prom;
     }
