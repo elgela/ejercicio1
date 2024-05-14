@@ -103,7 +103,7 @@ public class practica_3_ejercicio8 {
     }
 
     public static Double division() {
-        Double numero1 = 0.0, numero2 = 0.0; 
+        Double numero1 = 0.0, numero2 = 0.0;
         Double division = 0.0;
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 
