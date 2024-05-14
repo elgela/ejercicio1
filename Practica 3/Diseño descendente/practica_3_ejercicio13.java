@@ -62,10 +62,14 @@ public class practica_3_ejercicio13 {
     // }
 
     public static float promedio() {
+        float promedio = 0;
         float suma = (r1 + r2 + r3);
-        float prom = suma / 3;
-        System.out.println("El promedio es: " + prom);
-        return prom;
+        for (int numero = 0; numero < suma; numero++) {
+            suma += numero;
+        }
+        promedio = suma / 3;
+        System.out.println("El promedio es: " + promedio);
+        return promedio;
     }
 
     // public static double cocienteRaiz() {
