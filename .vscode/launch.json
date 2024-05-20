@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "practica_5_ejercicio2",
+            "request": "launch",
+            "mainClass": "Arreglos.practica_5_ejercicio2",
+            "projectName": "Prog 1_e2f870b5"
+        },
+        {
+            "type": "java",
+            "name": "practica_5_ejercicio1",
+            "request": "launch",
+            "mainClass": "Arreglos.practica_5_ejercicio1",
+            "projectName": "Prog 1_e2f870b5"
+        },
+        {
+            "type": "java",
+            "name": "practica_5_ejercicio2",
+            "request": "launch",
+            "mainClass": "practica_5_ejercicio2",
+            "projectName": "Prog 1_e2f870b5"
+        },
+        {
+            "type": "java",
             "name": "practica_5_ejercicio1",
             "request": "launch",
             "mainClass": "practica_5_ejercicio1",
