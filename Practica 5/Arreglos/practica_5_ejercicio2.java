@@ -15,12 +15,7 @@ public class practica_5_ejercicio2 {
         System.out.println('\0');
         System.out.println("El promedio es " + promedio);
     }
-    // public static void diez_enteros(int[] arr) {
-    //     Random r = new Random();
-    //     for (int pos = 0; pos < MAX; pos++) {
-    //         arr[pos] = (r.nextInt(VALORMAX-VALORMIN + 1) + VALORMIN);
-    //     }
-    // }
+
     public static double arr_promedio(int[] arr) {
         int suma = 0;
         try {
@@ -31,7 +26,6 @@ public class practica_5_ejercicio2 {
         } catch (Exception exc) {
             System.out.println("Error");
         }
-        // System.out.println("El promedio es: " + ((double)suma/MAX));
         return ((double)suma/MAX);
     }
 }
