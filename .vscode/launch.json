@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ejercicio7",
+            "request": "launch",
+            "mainClass": "ejercicio7",
+            "projectName": "Prog 1_e2f870b5"
+        },
+        {
+            "type": "java",
+            "name": "practica_5_ejercicio5",
+            "request": "launch",
+            "mainClass": "practica_5_ejercicio5",
+            "projectName": "Prog 1_e2f870b5"
+        },
+        {
+            "type": "java",
+            "name": "practica_5_ejercico11",
+            "request": "launch",
+            "mainClass": "practica_5_ejercico11",
+            "projectName": "Prog 1_e2f870b5"
+        },
+        {
+            "type": "java",
+            "name": "practica_5_ejercicio10",
+            "request": "launch",
+            "mainClass": "practica_5_ejercicio10",
+            "projectName": "Prog 1_e2f870b5"
+        },
+        {
+            "type": "java",
+            "name": "practica_5_ejercicio3",
+            "request": "launch",
+            "mainClass": "practica_5_ejercicio3",
+            "projectName": "Prog 1_e2f870b5"
+        },
+        {
+            "type": "java",
+            "name": "practica_5_ejercicio6",
+            "request": "launch",
+            "mainClass": "practica_5_ejercicio6",
+            "projectName": "Prog 1_e2f870b5"
+        },
+        {
+            "type": "java",
+            "name": "practica_5_ejercicio4",
+            "request": "launch",
+            "mainClass": "Arreglos.practica_5_ejercicio4",
+            "projectName": "Prog 1_e2f870b5"
+        },
+        {
+            "type": "java",
             "name": "practica_5_ejercicio3",
             "request": "launch",
             "mainClass": "Arreglos.practica_5_ejercicio3",

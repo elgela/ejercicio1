@@ -1,4 +1,3 @@
-package Arreglos;
 /*Cargar un arreglo de tamaño 15, pidiendo el ingreso por teclado
 de valores entre 1 y 12. Luego mostrar cómo quedó cargado. */
 
@@ -22,7 +21,6 @@ public class practica_5_ejercicio1 {
                 System.out.println("Ingrese valores entre 1 y 12");
                 arr[pos] = Integer.valueOf(entrada.readLine());
                 
-                System.out.println(arr[pos]);
             }
         } catch (Exception exc) {
             System.out.println("Error");

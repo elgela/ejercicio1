@@ -1,4 +1,3 @@
-package Arreglos;
 /*Hacer un programa que dado un arreglo ya cargado con 10
 enteros, calcule el promedio y lo muestre por la consola. */
 
@@ -10,7 +9,7 @@ public class practica_5_ejercicio2 {
     // final static int VALORMIN = 1;
     public static void main(String[] args) {
         int[] arrenteros = {5, 9, 12, 58, 63, 4, 23, 17, 20, 64};
-        double promedio;
+        double promedio = 0.0;
         // diez_enteros(arrenteros);
         promedio = arr_promedio(arrenteros);
         System.out.println('\0');
